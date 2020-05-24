@@ -12,10 +12,7 @@ const Counter = () => {
   const [value, setValue] = useRecoilState(counterState);
 
   const add = () => setValue(value + 1);
-  const subtract = () => {
-    if (value !== 0) setValue(value - 1);
-  };
-
+  const subtract = () => value !== 0 && setValue(value - 1);
   return (
     <div className="counter">
       <div>Count: {value}</div>
