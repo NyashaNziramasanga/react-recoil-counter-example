@@ -24,6 +24,13 @@
   color: white;
 }
 
+.counter button {
+  padding: 0.5 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
 .App-link {
   color: #61dafb;
 }
