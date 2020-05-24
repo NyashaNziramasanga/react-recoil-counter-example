@@ -1,6 +1,8 @@
-# React Recoil Example
+# React Recoil Counter Example
 
-Recoil state management with react example
+Recoil state management with react test using counter example
+
+![counter-example](images/counter-example.gif)
 
 ## Getting Started
 
