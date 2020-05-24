@@ -17,4 +17,4 @@ npm start
 ## Built With
 
 - [Recoil (State Management)](https://recoiljs.org/)
-- [React JS ](https://reactjs.org/)
+- [React JS](https://reactjs.org/)
