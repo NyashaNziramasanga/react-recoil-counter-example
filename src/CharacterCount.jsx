@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { atom, useRecoilState, selector, useRecoilValue } from 'recoil';
 
 const characterState = atom({
@@ -20,14 +20,16 @@ const CharacterCount = () => {
   const characterCount = useRecoilValue(characterCountState);
 
   return (
-    <div>
-      <span>count {characterCount}</span>
+    <Fragment>
+      <div>
+        <span>Count {characterCount}</span>{' '}
+      </div>
       <input
         type="text"
         value={character}
         onChange={(e) => setCharacter(e.target.value)}
       />
-    </div>
+    </Fragment>
   );
 };
 export default CharacterCount;

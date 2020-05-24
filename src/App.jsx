@@ -8,10 +8,10 @@ const App = () => (
   // Handle all recoil state from the root
   <RecoilRoot>
     <div className="App-header">
-      <h2>Character Count</h2>
+      <h2>Character Counter</h2>
       <CharacterCount />
 
-      <h2>Counter</h2>
+      <h2>Number Counter</h2>
       <Counter />
     </div>
   </RecoilRoot>
