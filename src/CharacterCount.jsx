@@ -18,6 +18,7 @@ const characterCountState = selector({
 const CharacterCount = () => {
   const [character, setCharacter] = useRecoilState(characterState);
   const characterCount = useRecoilValue(characterCountState);
+  const clear = () => setCharacter('');
 
   return (
     <Fragment>
@@ -29,6 +30,7 @@ const CharacterCount = () => {
         value={character}
         onChange={(e) => setCharacter(e.target.value)}
       />
+      <button onClick={clear}>Clear </button>
     </Fragment>
   );
 };

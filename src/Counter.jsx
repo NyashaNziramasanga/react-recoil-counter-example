@@ -13,11 +13,13 @@ const Counter = () => {
 
   const add = () => setValue(value + 1);
   const subtract = () => value !== 0 && setValue(value - 1);
+  const clear = () => value !== 0 && setValue(0);
   return (
     <div className="counter">
       <div>Count: {value}</div>
       <button onClick={add}>+</button>
       <button onClick={subtract}>-</button>
+      <button onClick={clear}>Clear</button>
     </div>
   );
 };
